@@ -8,9 +8,9 @@
 
 
 template <typename T>
-void printVec(T vec){
+void printVec(const T& vec){
     std::cout<< "[ ";
-    for (auto const& x : vec)
+    for (const auto& x : vec)
         std::cout << x << " ";
     std::cout<< "]\n";
 }
