@@ -26,6 +26,12 @@ struct SumAll
     static const int value = first + SumAll<rest...>::value;
 };
 
+template<int first>
+struct SumAll<first>
+{
+    static const int value = first;
+};
+
 // make this SumAll work as your homework.
 
 int main(int argc, char* argv[])
